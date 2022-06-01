@@ -1,0 +1,34 @@
+##Crear nuevo cliente
+POST http://localhost:8080/cliente
+Accept: application/json
+Content-type: application/json
+
+{
+  "first_name": "Ara2",
+  "last_name": "TorrezV",
+  "gender": "fem",
+  "age": "20",
+  "address": "Administrador 1",
+  "card_card_id": "2"
+}
+###consulta de saldo
+GET http://localhost:8080/consulta_de_saldo?id=1
+###Retiro
+POST http://localhost:8080/retiro
+Accept: application/json
+Content-type: application/json
+
+{
+  "saldo": "100",
+  "client_id": "1"
+}
+###Deposito
+POST http://localhost:8080/deposito
+Accept: application/json
+Content-type: application/json
+
+{
+  "saldo": "100",
+  "client_id": "1"
+}
+###
